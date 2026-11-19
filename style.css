@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #1e1e2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.con{
+    width: 350px;
+    background:#1b2145;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0, 0.4);
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#password{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.length-box{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.length-box label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="range"]{
+    width: 100%;
+}
+
+.settings{
+    display: flex;
+    
+    gap: 12px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    
+}
+
+button{
+    background-color:#7b61ff;
+    border-radius: 8px;
+    width: 100%;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    background: linear-gradient(
+        to right,
+        #7b68ee,
+        #b06cff);
+        font-weight: bold;
+}
+
+button:hover{
+    background: #6548ff;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+.switch input{
+    display: none;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #777;
+    border-radius: 34px;
+    transition: 0.4s;
+}
+.slider::before{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.4s;
+
+}
+input:checked+.slider{
+    background: #6c63ff;
+}
+input:checked+.slider::before{
+    transform: translateX(24px);
+}

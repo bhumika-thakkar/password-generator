@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <form action="">
+    <div class="con">
+    <h1>Password Generator</h1>
+    <input type="text" id="password" readonly>
+    <div class="length-box">
+    <label>Length:<span id="lengthValue">12</span></label>
+    <input type="range" id="lengthSlider" min="4" max="32" value="12">
+    </div>
+    SETTINGS <br>
+    <div class="settings">
+        <label>Include Uppercase</label>
+    <label class="switch"><input type="checkbox" id="Uppercase"><span class="slider"></span></label></div> 
+    <div class="settings">
+        <label>Include Lowercase</label>
+    <label class="switch"><input type="checkbox" id="Lowercase"><span class="slider"></span></label></div> 
+    <div class="settings">
+        <label>Include Numbers</label>
+    <label class="switch"><input type="checkbox" id="Numbers"><span class="slider"></span></label></div> 
+    <div class="settings">
+        <label>Include Symbols</label>
+    <label class="switch"><input type="checkbox" id="Symbols"><span class="slider"></span></label></div> 
+        
+    </div>
+    <button type="button" id="btn">GENERATE PASSWORD</button>
+    </div>
+    </form>
+    <script src="pwd.js"></script>
+</body>
+</html>
